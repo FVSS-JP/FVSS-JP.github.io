@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "団体名"
+title: "形式検証とシステムの安全性保証に関するワークショップ (Formal Verification and System Safety, FVSS)"
 ---
 
-私たちは、○○分野の研究交流を目的に活動しています。
+私たちは、形式検証分野の研究交流を目的に活動しています。
 
 ## お知らせ
 
