@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "形式検証とシステムの安全性保証に関するワークショップ (Formal Verification and System Safety, FVSS)"
+title: "形式検証とシステムの安全性保証に関するワークショップ (FVSS)"
 ---
 
 私たちは、形式検証分野の研究交流を目的に活動しています。
