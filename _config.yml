@@ -1,4 +1,7 @@
 title: "FVSS"
-description: "研究交流とワークショップを開催する団体です。"
+description: "FVSSは、日本に本部を置く、形式検証とシステムの安全性保証に関する国際会議です。"
 lang: ja
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

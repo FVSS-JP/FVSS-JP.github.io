@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | escape }}">
+  {%- include head.html -%}
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        {% if page.lang == 'en' %}
+          {% assign home_path = '/en/' %}
+        {% else %}
+          {% assign home_path = '/' %}
+        {% endif %}
+        <a class="site-title" rel="author" href="{{ home_path | relative_url }}">{{ site.title | escape }}</a>
+        <nav aria-label="{% if page.lang == 'en' %}Language{% else %}言語{% endif %}" style="float: right; line-height: 54px;">
+          <a href="{{ '/' | relative_url }}" lang="ja" hreflang="ja"{% if page.lang == 'ja' %} aria-current="page"{% endif %}>日本語</a>
+          <span aria-hidden="true"> / </span>
+          <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en"{% if page.lang == 'en' %} aria-current="page"{% endif %}>English</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content" aria-label="{% if page.lang == 'en' %}Main content{% else %}本文{% endif %}">
+      <div class="wrapper">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title | escape }}</h1>
+          </header>
+          <div class="post-content">
+            {{ content }}
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>{{ site.title | escape }} — {{ page.description | escape }}</p>
+      </div>
+    </footer>
+  </body>
+</html>
