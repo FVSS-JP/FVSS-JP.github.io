@@ -1,12 +1,12 @@
 ---
 layout: bilingual
-title: "International Conference on Formal Verification and System Safety Assurance (FVSS)"
-description: "FVSS is an international conference headquartered in Japan, focusing on formal verification and system safety assurance."
+title: "International Workshop on Formal Verification and System Safety Assurance (FVSS)"
+description: "FVSS is an international workshop headquartered in Japan, focusing on formal verification and system safety assurance."
 lang: en
 permalink: /en/
 ---
 
-FVSS is an **international conference headquartered in Japan**. We promote research exchange in formal verification and system safety assurance.
+FVSS is an **international workshop headquartered in Japan**. We promote research exchange in formal verification and system safety assurance.
 
 ## Activities
 
