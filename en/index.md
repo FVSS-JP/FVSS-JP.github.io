@@ -35,7 +35,3 @@ Further details and registration information will be announced as they become av
 - **Member**: Kazumune Hashimoto (The University of Osaka)
 - **Member**: Ken Sakayori (The University of Tokyo)
 - **Member**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, JAIST)
-
-## Advisor
-
-- Ichiro Hasuo (National Institute of Informatics)
