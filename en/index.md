@@ -6,7 +6,7 @@ lang: en
 permalink: /en/
 ---
 
-FVSS is an **international workshop headquartered in Japan**. We promote research exchange in formal verification and topics related to system safety.
+FVSS is an **international workshop headquartered in Japan**. We promote research exchange in formal verification and system safety.
 
 ## Activities
 
@@ -14,24 +14,20 @@ We provide opportunities for research exchange through talks, poster presentatio
 
 ## Upcoming Events
 
-### December 2026: Tokyo Workshop
+### Frontier of Formal Verification
 
-- **Dates**: December 19–20, 2026 (tentative)
-- **Duration**: 2 days / 1 night
-- **Location**: Tokyo, Japan
+- **Dates**: December 19–20, 2026
 - **Venue**: National Institute of Informatics (NII)
+- **Organizer**: Kazuki Watanabe
+- **Website**: [Link](https://group-mmm.org/~kazuki/FFV/en.html)
 
-### Late August–Early September 2027: First Research Retreat
+### First Research Retreat
 
 - **Dates**: August 31–September 2, 2027 (tentative)
 - **Duration**: 3 days / 2 nights
 - **Venue**: To be announced
-
-Further details and registration information will be announced as they become available.
-
-## Organizing Committee
-
-- **Chair**: Kazuki Watanabe (National Institute of Informatics)
-- **Local Arrangements**: Kazumune Hashimoto (The University of Osaka)
-- **Publicity**: Ken Sakayori (The University of Tokyo)
-- **Sponsorship and Diversity**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, JAIST)
+- **Organizing Committee**:
+  - **Chair**: Kazuki Watanabe (National Institute of Informatics)
+  - **Local Arrangements**: Kazumune Hashimoto (The University of Osaka)
+  - **Publicity**: Ken Sakayori (The University of Tokyo)
+  - **Sponsorship and Diversity**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, JAIST)
