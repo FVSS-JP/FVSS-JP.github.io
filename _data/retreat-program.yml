@@ -22,6 +22,59 @@ days:
         #     空行で段落を追加できます。
         #   en: |
         #     Enter the abstract in English.
+      - start: "13:15"
+        end: "14:45"
+        title:
+          ja: "招待講演"
+          en: "Invited Talk"
+        # speaker:
+        #   ja: "渡邉し"
+        #   en: "Speaker name"
+        # affiliation:
+        #   ja: "所属機関"
+        #   en: "Affiliation"
+        # abstract:
+        #   ja: |
+        #     日本語のアブストラクトを記入します。
+
+        #     空行で段落を追加できます。
+        #   en: |
+        #     Enter the abstract in English.
+      - start: "14:45"
+        end: "15:15"
+        title:
+          ja: "休憩"
+          en: "Coffee Break"
+      - start: "15:15"
+        end: "16:30"
+        title:
+          ja: "ポスターセッション"
+          en: "Poster Session"
+      - start: "16:30"
+        end: "17:00"
+        title:
+          ja: "休憩"
+          en: "Coffee Break"
+      - start: "17:00"
+        end: "18:00"
+        title:
+          ja: "口頭発表セッション"
+          en: "Talk"
+      - start: "18:00"
+        end: "19:00"
+        title:
+          ja: "休憩"
+          en: "Break"
+      - start: "19:00"
+        end: "20:30"
+        title:
+          ja: "夕食"
+          en: "Dinnear"
+      - start: "21:00"
+        end: "23:00"
+        title:
+          ja: "懇親会"
+          en: "Social Gathering"
   - date: "2027-08-31"
     sessions: []
   - date: "2027-09-01"
