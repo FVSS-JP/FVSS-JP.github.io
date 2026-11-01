@@ -21,7 +21,7 @@ We provide opportunities for research exchange through talks, poster presentatio
 - **Organizer**: Kazuki Watanabe
 - **Website**: [Link](https://group-mmm.org/~kazuki/FFV/en.html)
 
-### First Research Retreat
+### First Research Retreat (FVSS2027)
 
 - **Dates**: August 31–September 2, 2027 (tentative)
 - **Duration**: 3 days / 2 nights
