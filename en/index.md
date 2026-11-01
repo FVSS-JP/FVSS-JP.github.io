@@ -27,9 +27,9 @@ We provide opportunities for research exchange through talks, poster presentatio
 - **Duration**: 3 days / 2 nights
 - **Venue**: To be announced
 - **Organizing Committee**:
-  - **Chair**: Kazuki Watanabe (National Institute of Informatics)
-  - **Local Arrangements**: Kazumune Hashimoto (The University of Osaka)
-  - **Publicity**: Ken Sakayori (The University of Tokyo)
-  - **Sponsorship and Diversity**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, JAIST)
+  - **Chair**: Kazuki Watanabe (National Institute of Informatics, Assistant Professor)
+  - **Local Arrangements**: Kazumune Hashimoto (The University of Osaka, Associate Professor)
+  - **Publicity**: Ken Sakayori (The University of Tokyo, Assistant Professor)
+  - **Sponsorship and Diversity**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, Assistant Professor)
 
 {% include retreat-program.html %}
