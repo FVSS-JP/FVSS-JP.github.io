@@ -7,7 +7,7 @@
   {% assign program_session_count = program_session_count | plus: day_session_count %}
 {% endfor %}
 <section class="retreat-program" aria-labelledby="retreat-program-title">
-  <h4 id="retreat-program-title">{% if program_is_japanese %}プログラム{% else %}Program{% endif %}</h4>
+  <h4 id="retreat-program-title">{% if program_is_japanese %}プログラム (暫定){% else %}Program (Tentative){% endif %}</h4>
   {% if program_session_count == 0 %}
   <p>{% if program_is_japanese %}詳細なプログラムは決まり次第掲載します。{% else %}The detailed program will be announced when available.{% endif %}</p>
   {% endif %}
