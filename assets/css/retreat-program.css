@@ -1,0 +1,25 @@
+.retreat-program { margin-top: 1.5rem; }
+.retreat-program > h4 { font-size: 1.25rem; }
+.retreat-program-day { margin-top: 1.5rem; }
+.retreat-program-day > h5 { margin-bottom: .65rem; font-size: 1.05rem; }
+.retreat-program-table { width: 100%; table-layout: fixed; }
+.retreat-program-time-column { width: 9rem; }
+.retreat-program-table th,
+.retreat-program-table td { vertical-align: top; overflow-wrap: anywhere; }
+.retreat-program-table .retreat-program-time { font-weight: normal; background: transparent; font-variant-numeric: tabular-nums; }
+.retreat-program-time time { white-space: nowrap; }
+.retreat-program-session-title { margin: 0 0 .4rem; font-weight: 600; }
+.retreat-program-speaker,
+.retreat-program-affiliation { margin: .2rem 0; }
+.retreat-program-abstract { margin-top: .65rem; }
+.retreat-program-abstract > summary { cursor: pointer; color: #2a7ae2; }
+.retreat-program-abstract > summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.retreat-program-abstract > div { margin-top: .5rem; }
+.retreat-program-abstract > div > :last-child { margin-bottom: 0; }
+.retreat-program-pending { color: #666; }
+@media (max-width: 600px) {
+  .retreat-program-time-column { width: 6.5rem; }
+  .retreat-program-table th,
+  .retreat-program-table td { padding: .65rem .5rem; }
+  .retreat-program-time { font-size: .875rem; }
+}

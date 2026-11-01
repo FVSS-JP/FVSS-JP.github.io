@@ -1,0 +1,44 @@
+{% assign program_language = page.lang | default: 'ja' %}
+{% assign program_is_japanese = false %}
+{% if program_language == 'ja' %}{% assign program_is_japanese = true %}{% endif %}
+{% assign program_session_count = 0 %}
+{% for day in site.data.retreat-program.days %}
+  {% assign day_session_count = day.sessions | size %}
+  {% assign program_session_count = program_session_count | plus: day_session_count %}
+{% endfor %}
+<section class="retreat-program" aria-labelledby="retreat-program-title">
+  <h4 id="retreat-program-title">{% if program_is_japanese %}プログラム{% else %}Program{% endif %}</h4>
+  {% if program_session_count == 0 %}
+  <p>{% if program_is_japanese %}詳細なプログラムは決まり次第掲載します。{% else %}The detailed program will be announced when available.{% endif %}</p>
+  {% endif %}
+  {% for day in site.data.retreat-program.days %}
+  <section class="retreat-program-day" aria-labelledby="retreat-program-day-{{ day.date | escape }}">
+    <h5 id="retreat-program-day-{{ day.date | escape }}">{% if program_is_japanese %}{{ forloop.index }}日目：<time datetime="{{ day.date | escape }}">{{ day.date | date: '%Y年%-m月%-d日' }}</time>{% else %}Day {{ forloop.index }}: <time datetime="{{ day.date | escape }}">{{ day.date | date: '%B %-d, %Y' }}</time>{% endif %}</h5>
+    <table class="retreat-program-table" aria-labelledby="retreat-program-day-{{ day.date | escape }}">
+      <colgroup><col class="retreat-program-time-column"><col></colgroup>
+      <thead><tr><th scope="col">{% if program_is_japanese %}時刻{% else %}Time{% endif %}</th><th scope="col">{% if program_is_japanese %}内容・発表者{% else %}Session / Speaker{% endif %}</th></tr></thead>
+      <tbody>
+        {% for session in day.sessions %}
+        {% assign session_title = session.title[program_language] | default: session.title.ja | default: session.title.en %}
+        {% assign session_speaker = session.speaker[program_language] | default: session.speaker.ja | default: session.speaker.en %}
+        {% assign session_affiliation = session.affiliation[program_language] | default: session.affiliation.ja | default: session.affiliation.en %}
+        {% assign session_abstract = session.abstract[program_language] | default: session.abstract.ja | default: session.abstract.en %}
+        {% assign session_start = session.start | default: '' %}
+        {% assign session_end = session.end | default: '' %}
+        <tr>
+          <th scope="row" class="retreat-program-time">{% if session_start != '' %}<time datetime="{{ day.date | escape }}T{{ session_start | escape }}:00+09:00">{{ session_start | escape }}</time>{% if session_end != '' %}–<wbr><time datetime="{{ day.date | escape }}T{{ session_end | escape }}:00+09:00">{{ session_end | escape }}</time>{% endif %}{% else %}{% if program_is_japanese %}時刻未定{% else %}Time TBA{% endif %}{% endif %}</th>
+          <td>
+            <p class="retreat-program-session-title">{% if session_title %}{{ session_title | escape }}{% else %}{% if program_is_japanese %}内容調整中{% else %}To be announced{% endif %}{% endif %}</p>
+            {% if session_speaker %}<p class="retreat-program-speaker"><strong>{% if program_is_japanese %}話者：{% else %}Speaker: {% endif %}</strong>{{ session_speaker | escape }}</p>{% endif %}
+            {% if session_affiliation %}<p class="retreat-program-affiliation"><strong>{% if program_is_japanese %}所属：{% else %}Affiliation: {% endif %}</strong>{{ session_affiliation | escape }}</p>{% endif %}
+            {% if session_abstract %}<details class="retreat-program-abstract"><summary>{% if program_is_japanese %}アブストラクト{% else %}Abstract{% endif %}</summary><div>{{ session_abstract | markdownify }}</div></details>{% endif %}
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="2" class="retreat-program-pending">{% if program_is_japanese %}プログラムは準備中です。{% else %}Program to be announced.{% endif %}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+</section>

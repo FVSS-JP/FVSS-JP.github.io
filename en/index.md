@@ -31,3 +31,5 @@ We provide opportunities for research exchange through talks, poster presentatio
   - **Local Arrangements**: Kazumune Hashimoto (The University of Osaka)
   - **Publicity**: Ken Sakayori (The University of Tokyo)
   - **Sponsorship and Diversity**: Duong Dinh Tran (Japan Advanced Institute of Science and Technology, JAIST)
+
+{% include retreat-program.html %}

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | escape }}">
-  {%- include head.html -%}
+  {%- capture retreat_program_stylesheet -%}
+    <link rel="stylesheet" href="{{ '/assets/css/retreat-program.css' | relative_url }}">
+  {%- endcapture -%}
+  {%- capture bilingual_head -%}{%- include head.html -%}{%- endcapture -%}
+  {{- bilingual_head | replace: '</head>', retreat_program_stylesheet | append: '</head>' -}}
   <body>
     <header class="site-header">
       <div class="wrapper">
