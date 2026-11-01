@@ -76,6 +76,61 @@ days:
           ja: "懇親会"
           en: "Social Gathering"
   - date: "2027-08-31"
-    sessions: []
+    sessions: 
+      - start: "9:00"
+        end: "10:00"
+        title:
+          ja: "口頭発表セッション"
+          en: "Talk"
+      - start: "10:00"
+        end: "10:30"
+        title:
+          ja: "休憩"
+          en: "Coffee Break"
+      - start: "10:30"
+        end: "12:00"
+        title:
+          ja: "招待講演"
+          en: "Invited Talk"
+      - start: "12:00"
+        end: "13:30"
+        title:
+          ja: "お昼休憩"
+          en: "Lunch Break"
+      - start: "13:30"
+        end: "14:45"
+        title:
+          ja: "ポスターセッション"
+          en: "Poster Session"
+      - start: "14:45"
+        end: "15:15"
+        title:
+          ja: "休憩"
+          en: "Coffee Break"
+      - start: "15:15"
+        end: "16:30"
+        title:
+          ja: "ポスターセッション"
+          en: "Poster Session"
+      - start: "16:30"
+        end: "17:00"
+        title:
+          ja: "休憩"
+          en: "Coffee Break"
+      - start: "17:00"
+        end: "18:00"
+        title:
+          ja: "スポンサートーク"
+          en: "Sponser Talk"
+      - start: "19:00"
+        end: "20:30"
+        title:
+          ja: "夕食"
+          en: "Dinnear"
+      - start: "21:00"
+        end: "23:00"
+        title:
+          ja: "懇親会"
+          en: "Social Gathering"
   - date: "2027-09-01"
     sessions: []
